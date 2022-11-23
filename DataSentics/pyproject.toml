@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "datasentics"
+version = "0.1.0"
+description = ""
+authors = ["Jakub Bureš <jakub.bures@avast.com>"]
+readme = "README.md"
+packages = [{include = "datasentics", from = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.11"
+jupyterlab = "^3.5.0"
+tensorflow = "^2.10.1"
+opencv-python = "^4.6.0.66"
+matplotlib = "^3.6.2"
+pillow = "^9.3.0"
+pytesseract = "^0.3.10"
+numpy = "^1.23.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
